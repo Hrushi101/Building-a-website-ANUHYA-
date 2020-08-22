@@ -1,0 +1,123 @@
+.loader{
+  filter:hue-rotate(0deg);
+  color:linear-gradient(45deg,#0f8,#08f);
+  animation:hue 5000ms infinite linear;
+}
+
+@keyframes spinify {
+  0% {
+    transform: translate(0px,0px);
+
+  }
+  33% {
+    transform: translate(0px,24px);
+    border-radius:100%;
+    width:10px;
+    height:10px;
+
+  }
+   66% {
+    transform:translate(0px,-16px);
+  }
+
+   88% {
+    transform:translate(0px,4px);
+
+  }
+  100% {
+    transform:translate(0px,0px);
+  }
+}
+@keyframes hue{
+  0%{filter: hue-rotate(0deg);}
+  100%{filter:hue-rotate(360deg);}
+
+}
+
+p {
+  text-align: center;
+}
+#bgimg{
+
+      background-image: url('https://storage.pixteller.com/designs/designs-images/2019-03-27/05/love-and-passion-background-backgrounds-romantic-1-5c9b994d38556.png');
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: black;
+      font-family: "Courier New", Courier, monospace;
+      filter:hue-rotate(0deg);
+      color:linear-gradient(45deg,#0f8,#08f);
+      animation:hue 10000ms infinite linear;
+
+}
+
+#body {
+
+
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    filter:hue-rotate(0deg);
+    color:linear-gradient(45deg,#0f8,#08f);
+    animation:hue 10000ms infinite linear;
+
+  }
+@keyframes spinify {
+      0% {
+        transform: translate(0px,0px);
+
+      }
+      33% {
+        transform: translate(0px,24px);
+        border-radius:100%;
+        width:10px;
+        height:10px;
+
+      }
+       66% {
+        transform:translate(0px,-16px);
+      }
+
+       88% {
+        transform:translate(0px,4px);
+
+      }
+      100% {
+        transform:translate(0px,0px);
+      }
+    }
+    @keyframes hue{
+      0%{filter: hue-rotate(0deg);}
+      100%{filter:hue-rotate(360deg);}
+
+    }
+
+table {
+  color: white;
+  background-color: rgb(8, 48, 80);
+  border-collapse: collapse;
+  font-size: 40px;
+  font-family: serif;
+  padding: 20px;
+  border: 5px solid white;
+  text-align: center;
+}
+#title {
+  text-align: center;
+  color: #C70039;
+}
+#a1 {
+  align: center;
+
+}
+#name {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5%;
+  outline: 0;
+  border: 1px solid lightgray;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="iso-8859-1">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <title>ANUHYA</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style type="text/css">
+
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #header{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding:6px;
+  }
+
+}
+  #navigation{
+    line-height: 40px;
+    background-color: transparent;
+    height: 500px;
+    width: 300px;
+    float: left;
+    padding: 5px;
+
+  }
+
+  #section{
+    width: 30%;
+
+    height: 60%;
+    float: left;
+    padding: 10px;
+    background-color: transparent;
+    border-collapse: collapse;
+    text-align: center;
+
+  }
+  #middle {
+    width: 40%;
+    height: 60%;
+    float: left;
+    padding: 10px;
+
+    background-color: transparent;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  #foot{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding:0px;
+    clear: both;
+  }
+
+  .accordion {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: transparent;
+}
+
+.panel {
+  padding: 0 18px;
+  color: :white;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+#para {
+  color: white;
+}
+h2 {
+  color: white;
+
+}
+.card {
+  width: 30px;
+  min-width: 80px;
+  height: 30px;
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
+  margin: 25px;
+  min-height: 30px;
+  transition: all .25s ease;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.08);
+  cursor: pointer;
+  align-items: center;
+}
+.card:hover {
+  transform: translate(0, -10px);
+  box-shadow: 0px 17px 35px 0px rgba(0,0,0,0.07)
+}
+.card .con-text {
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1 align="center">ANUHYA<br>
+      An innovative discovery<br>
+      </h1>
+    <p>writing information and link given to a html page for further information</p>
+  </div>
+  <div id="navigation">
+
+    <button class="accordion">About us</button>
+    <div class="panel">
+    <p id="para">FOLLOW US ON:  INSTAGRAM : ID<br>
+                      FACEBOOK: id <br>
+                      TWITTER : ID <br></p>
+    </div>
+    <button class="accordion">Contact</button>
+    <div class="panel">
+    <p id="para">CONTACT US AT:  WATSAPP : 8971315695(TARUN)<br>
+                       EMAIL ID :hrushikesh.kulkarni2017@gmail.com</p>
+    </div>
+  </div>
+
+  <div id="section">
+    <h2 >COME UP AND COME ALL .....</h2>
+    <p id="para">ACTING IS A CRAZE,PASSION AND LOVABLE WORK.<br>
+    Are you interseted and looking for an opportuinity, I think you are at the place!!!!!.<br>
+    We as a group of Enthusiastic film makers are trying to make a fortune here , in this Industry.We are in search of people who are really intereseted and are ready to jump into this adventure with us.<br>
+    So if you want to be one among us ,pls fillup the form.</p>
+      </div>
+  <div id="middle">
+    <div class="con-text">
+    <h2>TO REGISTER</h2>
+    <button class="card"><a id="a1" href="fillform.html">Click here </a></button><br>
+  </div>
+  <div class="con-text">
+    <h2>TO KNOW MORE</h2>
+    <button class="card"><a href="home.php">Click here </a></button>
+  </div>
+    </div>
+  </body>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</html>

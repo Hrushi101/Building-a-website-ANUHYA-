@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta>
+    <title>Filling the form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="body">
+    <div id="bgimg">
+    <form  action="sign.php" method="POST">
+    <table align="center" cellpadding="10">
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name" placeholder="Please enter your name" required></td>
+      </tr>
+      <tr>
+        <td>Contact Number:</td>
+        <td><input type="text" name="cnum" placeholder="Please enter your contact number" required></td>
+      </tr>
+      <tr>
+        <td>Whatapp Number:</td>
+        <td><input type="text" name="wnum" placeholder="Please enter your whatsapp number" required></td>
+      </tr>
+      <tr>
+        <td>E-mail:</td>
+        <td><input type="text" name="email" placeholder="Please enter your E-mail" required></td>
+      </tr>
+      <tr>
+        <td>Age:</td>
+        <td><input type="text" name="age" placeholder="Please enter your age" required></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td><input type="radio" name="male" required>Male
+            <input type="radio" name="male" required>Female
+            <input type="radio" name="male" required>Others
+      </tr>
+      <tr>
+        <td>Skill:</td>
+        <td><input type="text" name="skill" placeholder="Please enter your skill" required></td>
+      </tr>
+      <tr><td></td>
+        <td>
+      <button type="submit" name="submit" placeholder="Submit" action="message.php">Submit</button></td>
+      </tr>
+    </table>
+    </form>
+  </div>
+  </body>
+</html>
